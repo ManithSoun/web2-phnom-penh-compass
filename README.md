@@ -26,35 +26,28 @@ The app will run at `http://localhost:5173`
 
 ```
 phnom-penh-compass/
-├── public/
+├── assets/
 │   ├── images/
 │   └── icons/
-├── src/
-│   ├── components/       # Shared/reusable UI components
-│   ├── pages/            # One file per page (HomePage, ExplorePage, etc.)
-│   ├── sections/         # Page-specific sections
-│   ├── hooks/            # Custom React hooks (useWeather.js, usePlaces.js)
-│   ├── services/         # All API call functions go here
-│   ├── utils/            # Helper functions and formatters
-│   ├── styles/           # globals.css, variables.css
-│   ├── constants/        # Static data (emergency contacts, embassies, etc.)
-│   ├── App.jsx
-│   └── main.jsx
-├── .env.example          # Template for environment variables
-├── .env.local            # Your actual API keys — NEVER commit this file
+├── pages/
+│   ├── explore.html
+│   ├── services.html
+│   ├── dos-donts.html
+│   └── advisory.html
+├── js/
+│   ├── services/         # API call functions
+│   ├── utils/            # Helper functions
+│   └── main.js
+├── css/
+│   └── style.css         # Custom styles only (Tailwind via CDN)
+├── constants/
+│   └── emergencyData.js  # Static data (emergency contacts, embassies)
+├── index.html            # Home page
+├── config.example.js     # Key names only — commit this
+├── js/config.js          # Your real API keys — NEVER commit this
 ├── .gitignore
 └── README.md
 ```
-### Naming Conventions
-
-| Type | Convention | Example |
-|------|-----------|---------|
-| Components & Pages | PascalCase | `PlaceCard.jsx`, `HomePage.jsx` |
-| Functions & variables | camelCase | `fetchPlaces()`, `isLoading` |
-| CSS classes | kebab-case | `.place-card`, `.weather-widget` |
-| Constants | SCREAMING_SNAKE_CASE | `API_BASE_URL`, `MAX_RESULTS` |
-| Custom hooks | `use` prefix | `useWeather.js`, `usePlaces.js` |
-| Service files | camelCase + Service | `placesService.js`, `weatherService.js` |
 
 ### Branch Naming
 
