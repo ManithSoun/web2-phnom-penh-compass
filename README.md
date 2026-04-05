@@ -48,16 +48,6 @@ phnom-penh-compass/
 ├── .gitignore
 └── README.md
 ```
-### Naming Conventions
-
-| Type | Convention | Example |
-|------|-----------|---------|
-| Components & Pages | PascalCase | `PlaceCard.jsx`, `HomePage.jsx` |
-| Functions & variables | camelCase | `fetchPlaces()`, `isLoading` |
-| CSS classes | kebab-case | `.place-card`, `.weather-widget` |
-| Constants | SCREAMING_SNAKE_CASE | `API_BASE_URL`, `MAX_RESULTS` |
-| Custom hooks | `use` prefix | `useWeather.js`, `usePlaces.js` |
-| Service files | camelCase + Service | `placesService.js`, `weatherService.js` |
 
 ### Branch Naming
 
