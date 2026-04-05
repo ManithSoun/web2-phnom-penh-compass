@@ -5,7 +5,7 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-group/phnom-penh-compass.git
+git clone git@github.com:ManithSoun/web2-phnom-penh-compass.git
 
 # 2. Go into the project folder
 cd phnom-penh-compass
