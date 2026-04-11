@@ -1,74 +1,97 @@
 # Phnom Penh Compass
 
-## Project Setup
-### Installation Steps
+## Setup
+
+### 1. Clone the repository
 
 ```bash
-# 1. Clone the repository
-git clone git@github.com:ManithSoun/web2-phnom-penh-compass.git
+git clone https://github.com/ManithSoun/web2-phnom-penh-compass.git
+cd web2-phnom-penh-compass
+```
 
-# 2. Go into the project folder
-cd phnom-penh-compass
+### 2. Install Dependencies
 
-# 3. Install dependencies
+```bash
 npm install
-
-# 4. Copy the example env file and fill in your API keys
-cp .env.example .env.local
-
-# 5. Start the development server
-npm run dev
 ```
 
-The app will run at `http://localhost:5173`
-
-### Folder Structure
-
-```
-phnom-penh-compass/
-├── assets/
-│   ├── images/
-│   └── icons/
-├── pages/
-│   ├── explore.html
-│   ├── services.html
-│   ├── dos-donts.html
-│   └── advisory.html
-├── js/
-│   ├── services/         # API call functions
-│   ├── utils/            # Helper functions
-│   └── main.js
-├── css/
-│   └── style.css         # Custom styles only (Tailwind via CDN)
-├── constants/
-│   └── emergencyData.js  # Static data (emergency contacts, embassies)
-├── index.html            # Home page
-├── config.example.js     # Key names only — commit this
-├── js/config.js          # Your real API keys — NEVER commit this
-├── .gitignore
-└── README.md
-```
-
-### Branch Naming
-
-```
-feature/explore-page
-feature/weather-widget
-fix/place-card-crash
-```
-### Step-by-Step Workflow
+### 3. Run Tailwind
 
 ```bash
-# 1. Pull the latest main
+npm run build:css
+```
+
+## Project Structure
+
+# Project Structure
+
+```bash
+web2-phnom-penh-compass/
+├── index.html              # Home page (weather + hero section)
+├── explore.html            # Explore places page (Google Places API)
+├── services.html           # Services & emergency contacts page
+├── dos-donts.html          # Cultural guidelines page
+├── advisory.html           # Travel advisory page (TuGo API)
+
+├── src/
+│   ├── js/                 # All JavaScript files
+│   │   ├── components.js   # Shared components (navbar, footer)
+│   │   ├── main.js         # General/common scripts (if needed)
+│   │   ├── weather.js      # Fetch and display weather data
+│   │   ├── explore.js      # Handle places data and UI
+│   │   ├── services.js     # Display services and contacts
+│   │   ├── emergencyData.js# Static emergency data
+│   │   ├── dos-donts.js    # Logic for do’s & don’ts page
+│   │   └── advisory.js     # Fetch and display advisory data
+│
+│   ├── css/
+│   │   └── input.css       # Tailwind source file (edit here)
+│
+│   └── assets/             # Images, icons, and other static files
+
+├── dist/
+│   └── output.css          # Generated Tailwind CSS (DO NOT edit)
+
+├── package.json            # Project config and scripts
+├── tailwind.config.js      # Tailwind configuration
+├── postcss.config.js       # PostCSS configuration
+└── README.md               # Project documentation
+```
+
+### CSS
+
+- Do not edit dist/output.css
+- Edit src/css/input.css
+
+Each HTML file must include:
+
+```bash
+<link rel="stylesheet" href="./dist/output.css">
+```
+
+## Workflow
+
+### Start working
+
+```bash
+# Pull the latest main
 git checkout main
-git pull
+git pull origin main
+#  Create your own branch
+git checkout -b feature/your-task
+```
 
-# 2. Create your own branch
-git checkout -b feature/your-feature-name
+### After finishing
 
-# 3. Commit code to the git
+```bash
+# Commit code to the git
 git add .
-git commit -m "feat(section): describe what you did"
+git commit -m "feat(page): describe what you did"
+# Push your branch to GitHub
+git push origin feature/your-task
+```
 
-# 4. Push your branch to GitHub
-git push origin feature/your-feature-name
+# Notes
+
+- Run `npm run build:css` before coding
+- Do not commit API keys
