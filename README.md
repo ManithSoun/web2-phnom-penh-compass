@@ -1,4 +1,4 @@
-# Phnom Penh Compass 🧭
+# Phnom Penh Compass
 
 ## Project Setup
 
@@ -37,7 +37,9 @@ Copy `sample.html` and paste it to your HTML page, then:
 
 ## Project Structure
 
-```
+# Project Structure
+
+```bash
 web2-phnom-penh-compass/
 ├── pages/                       # Paste the sample.html file to your belong page in this folder
 │   ├── advisory.html
@@ -62,8 +64,8 @@ web2-phnom-penh-compass/
 │       ├── dos-donts.js
 │       └── advisory.js
 ├── index.html                    # Home page
-├── sample.html                 # copy this for new pages
-├── config.js                     # Your API keys — NEVER commit this
+├── sample.html                   # copy this for new pages
+├── config.js                     # API keys, NEVER commit this
 ├── config.example.js
 ├── .gitignore
 └── README.md
