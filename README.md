@@ -37,8 +37,6 @@ Copy `sample.html` and paste it to your HTML page, then:
 
 ## Project Structure
 
-# Project Structure
-
 ```bash
 web2-phnom-penh-compass/
 ├── pages/                       # Paste the sample.html file to your belong page in this folder
@@ -101,7 +99,7 @@ async function fetchData() {
 ### Branch Naming
 
 ```
-feature/page-name
+feat/page-name
 ```
 
 ### Workflow
@@ -112,7 +110,7 @@ git checkout main
 git pull origin main
 
 # 2. Create your own branch
-git checkout -b feature/your-feature-name
+git checkout -b feat/your-feature-name
 
 # 3. Work and commit often
 git add .
