@@ -31,7 +31,7 @@ const CONFIG = {
 
 ### 3. Working on your page
 
-Copy `template.html` and paste it to your HTML page, then:
+Copy `sample.html` and paste it to your HTML page, then:
 
 - Write your content inside `<main>`
 
@@ -39,7 +39,7 @@ Copy `template.html` and paste it to your HTML page, then:
 
 ```
 web2-phnom-penh-compass/
-├── pages/                       # Paste the template.html file to your belong page in this folder
+├── pages/                       # Paste the sample.html file to your belong page in this folder
 │   ├── advisory.html
 │   ├── dos-donts.html
 │   ├── explore.html
@@ -62,7 +62,7 @@ web2-phnom-penh-compass/
 │       ├── dos-donts.js
 │       └── advisory.js
 ├── index.html                    # Home page
-├── template.html                 # Base template — copy this for new pages
+├── sample.html                 # copy this for new pages
 ├── config.js                     # Your API keys — NEVER commit this
 ├── config.example.js
 ├── .gitignore
