@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Advisory — Phnom Penh Compass</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -15,21 +16,19 @@
   <body class="flex flex-col min-h-screen bg-[#FBFCF6] text-gray-800">
     <header></header>
 
-    <main class="flex-grow">
-      <!-- Hero -->
-      <section class="bg-[#1C3F5E] text-white py-16 px-4">
+    <main class="flex-grow mt-20">
+      <section class="bg-[#202D45] text-white py-16 px-4">
         <div class="max-w-4xl mx-auto text-center">
           <h1 class="text-4xl font-bold mb-4">Cambodia Travel Advisory</h1>
-          <p class="text-gray-300 text-lg">
-            Check out how Cambodia is right now before your travel. Here is the
-            latest travel safety information for Cambodia.
+          <p id="hero-desc" class="text-gray-300 text-lg">
+            Stay informed before you travel. Here is the latest safety
+            information for Cambodia.
           </p>
         </div>
       </section>
 
-      <!-- Content -->
       <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-6">
-        <!-- Loading -->
+        <!-- loading -->
         <div id="loading" class="text-center py-20">
           <i
             class="fa-solid fa-spinner fa-spin text-3xl text-gray-400 mb-4"
@@ -37,7 +36,7 @@
           <p class="text-gray-400 text-lg mt-4">Loading advisory data...</p>
         </div>
 
-        <!-- Error -->
+        <!-- error -->
         <div id="error" class="hidden text-center py-20">
           <i class="fa-solid fa-triangle-exclamation text-3xl text-red-400"></i>
           <p class="text-red-400 text-lg mt-4">
@@ -45,9 +44,9 @@
           </p>
         </div>
 
-        <!-- Advisory Content -->
+        <!-- advisory -->
         <div id="advisory-content" class="hidden space-y-6">
-          <!-- Risk Card -->
+          <!-- risk badge -->
           <div
             class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8"
           >
@@ -74,7 +73,7 @@
             </div>
           </div>
 
-          <!-- Latest Update Card -->
+          <!-- latest update -->
           <div
             class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8"
           >
@@ -95,7 +94,7 @@
             ></p>
           </div>
 
-          <!-- Advice Levels Card -->
+          <!-- advice levels -->
           <div
             class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8"
           >
@@ -114,8 +113,8 @@
             <div id="advice-levels" class="space-y-3"></div>
           </div>
 
-          <!-- Read More -->
-          <div class="bg-[#1C3F5E] rounded-2xl p-8 text-white text-center">
+          <!-- read More -->
+          <div class="bg-[#202D45] rounded-2xl p-8 text-white text-center">
             <i class="fa-solid fa-globe text-3xl mb-4 opacity-80"></i>
             <h3 class="text-lg font-semibold mb-2">Read the Full Advisory</h3>
             <p class="text-gray-300 text-sm mb-6">
@@ -126,7 +125,7 @@
               id="advisory-link"
               href="#"
               target="_blank"
-              class="inline-block bg-[#DFB777] text-[#1C3F5E] font-semibold px-6 py-3 rounded-full hover:bg-[#be924b] transition"
+              class="inline-block bg-[#DFB777] text-[#202D45] font-semibold px-6 py-3 rounded-full hover:bg-[#be924b] transition"
             >
               Visit Smartraveller
               <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>

@@ -89,7 +89,8 @@ async function fetchData() {
     const data = await res.json();
     return data;
   } catch (err) {
-    console.error("fetchData error:", err);
+    console.log(err.message);
+    showError();
   }
 }
 ```
