@@ -165,11 +165,17 @@ document.addEventListener("click", (e) => {
   btn.title = alreadyLoved ? "Remove from favourites" : "Save to favourites";
 });
 
-// Render all four sections
+// Render explore.html preview sections
 renderCards("cafes-list", cafesData);
 renderCards("restaurants-list", restaurantsData);
 renderCards("museums-list", museumsData);
 renderCards("sights-list", sightsData);
+
+// Render category detail pages (cafes.html, restaurants.html, museums.html, sights2see.html)
+renderCards("cafes-detail-list", cafesData);
+renderCards("restaurants-detail-list", restaurantsData);
+renderCards("museums-detail-list", museumsData);
+renderCards("sights-detail-list", sightsData);
 
 // Update badge once navbar is ready (navbar loads asynchronously)
 // components.js calls updateFavBadge() after inject — this handles the page-load case
