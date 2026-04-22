@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="../../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/style.css" />
   </head>
 
   <body class="flex flex-col min-h-screen bg-background text-gray-800">
@@ -18,17 +18,12 @@
 
     <main class="grow pt-24 pb-12">
       <section class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-        <a
-          href="explore.html"
-          class="inline-flex items-center gap-2 mb-6 text-sm font-semibold text-primary hover:underline"
-        >
+        <a href="explore.html" class="inline-flex items-center gap-2 mb-6 text-sm font-medium text-secondary hover:underline">
           <i class="fa-solid fa-arrow-left"></i>
           Back to Explore
         </a>
 
-        <article
-          class="grid gap-6 p-6 bg-white border border-gray-100 shadow-md rounded-2xl md:grid-cols-2"
-        >
+        <article class="grid gap-6 p-6 bg-white border border-gray-100 shadow-md rounded-2xl md:grid-cols-2">
           <img
             id="place-image"
             src=""
@@ -37,17 +32,11 @@
           />
 
           <div>
-            <h1
-              id="place-name"
-              class="mb-3 text-3xl font-bold text-primary"
-            ></h1>
+            <h1 id="place-name" class="mb-3 text-3xl font-bold text-primary"></h1>
             <p id="place-location" class="mb-2 text-sm text-gray-600"></p>
             <p id="place-description" class="mb-4 text-gray-700"></p>
             <div class="flex items-center gap-4 text-sm">
-              <span
-                id="place-price"
-                class="font-semibold text-secondary"
-              ></span>
+              <span id="place-price" class="font-semibold text-secondary"></span>
               <span id="place-hours" class="font-medium text-primary"></span>
             </div>
             <a
@@ -61,18 +50,12 @@
           </div>
         </article>
 
-        <section
-          class="p-6 mt-8 bg-white border border-gray-100 shadow-md rounded-2xl"
-        >
-          <h2 class="mb-4 text-2xl font-bold text-primary">
-            Share your feedback
-          </h2>
+        <section class="p-6 mt-8 bg-white border border-gray-100 shadow-md rounded-2xl">
+          <h2 class="mb-4 text-2xl font-bold text-primary">Share your feedback</h2>
 
           <form id="comment-form" class="space-y-4">
             <div>
-              <label for="comment-name" class="block mb-1 text-sm font-medium"
-                >Name <span class="text-rose-500">*</span></label
-              >
+              <label for="comment-name" class="block mb-1 text-sm font-medium">Name</label>
               <input
                 id="comment-name"
                 name="name"
@@ -85,11 +68,7 @@
             </div>
 
             <div>
-              <label
-                for="comment-message"
-                class="block mb-1 text-sm font-medium"
-                >Comment <span class="text-rose-500">*</span></label
-              >
+              <label for="comment-message" class="block mb-1 text-sm font-medium">Comment</label>
               <textarea
                 id="comment-message"
                 name="message"
@@ -102,9 +81,7 @@
             </div>
 
             <div>
-              <label for="comment-photo" class="block mb-1 text-sm font-medium"
-                >Photo (optional)</label
-              >
+              <label for="comment-photo" class="block mb-1 text-sm font-medium">Photo (optional)</label>
               <input
                 id="comment-photo"
                 name="photo"
@@ -112,29 +89,34 @@
                 accept="image/*"
                 class="block w-full text-sm"
               />
-              <p class="mt-1 text-xs text-gray-500">
-                Max 1 MB image for local storage safety.
-              </p>
+              <p class="mt-1 text-xs text-gray-500">Max 1 MB image for local storage safety.</p>
             </div>
 
-            <button
-              type="submit"
-              class="px-4 py-2 text-white transition rounded-lg bg-primary hover:bg-[#162f45]"
-            >
-              Post Comment
-            </button>
+            <div class="flex flex-wrap items-center gap-3">
+              <button
+                id="comment-submit-btn"
+                type="submit"
+                class="px-4 py-2 text-white transition rounded-lg bg-primary hover:bg-[#162f45]"
+              >
+                Post Comment
+              </button>
+              <button
+                id="comment-cancel-edit-btn"
+                type="button"
+                class="hidden px-4 py-2 text-sm font-medium text-gray-700 transition border border-gray-300 rounded-lg hover:bg-gray-50"
+              >
+                Cancel Edit
+              </button>
+              <p id="comment-form-mode" class="hidden text-sm text-secondary"></p>
+            </div>
           </form>
         </section>
 
-        <section
-          class="p-6 mt-8 bg-white border border-gray-100 shadow-md rounded-2xl"
-        >
+        <section class="p-6 mt-8 bg-white border border-gray-100 shadow-md rounded-2xl">
           <div class="flex items-center justify-between mb-4">
             <h2 class="text-2xl font-bold text-primary">Community comments</h2>
           </div>
-          <p class="mb-4 text-sm text-gray-500">
-            You can delete your own comments one by one from this browser.
-          </p>
+          <p class="mb-4 text-sm text-gray-500">Checkout the place reviews and feedbacks.</p>
 
           <div id="comments-list" class="space-y-4"></div>
         </section>
@@ -143,10 +125,10 @@
 
     <footer></footer>
 
-    <script src="../../config.js"></script>
-    <script src="../../src/js/components.js"></script>
-    <script src="../../src/js/exploreData.js"></script>
-    <script src="../../src/js/explore-detail.js"></script>
-    <script src="../../tailwind-config.js"></script>
+    <script src="../config.js"></script>
+    <script src="../src/js/components.js"></script>
+    <script src="../src/js/exploreData.js"></script>
+    <script src="../src/js/explore-detail.js"></script>
+    <script src="../tailwind-config.js"></script>
   </body>
 </html>
