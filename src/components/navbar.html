@@ -24,7 +24,7 @@
       >Home</a
     >
     <a
-      href="/pages/explore.html"
+      href="/pages/explore/explore.html"
       class="block px-6 py-4 border-b hover:bg-gray-100"
       >Explore</a
     >
@@ -81,7 +81,10 @@
     >
       <i class="fa-solid fa-heart text-rose-500"></i>
       My Favourites
-      <span id="mobile-fav-badge" class="ml-auto hidden bg-rose-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center"></span>
+      <span
+        id="mobile-fav-badge"
+        class="ml-auto hidden bg-rose-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center"
+      ></span>
     </a>
   </div>
 </div>
@@ -98,7 +101,9 @@
 
     <!-- menu -->
     <div class="hidden md:flex items-center space-x-6">
-      <a href="/pages/explore.html" class="hover:text-yellow-600">Explore</a>
+      <a href="/pages/explore/explore.html" class="hover:text-yellow-600"
+        >Explore</a
+      >
       <a href="/pages/advisory.html" class="hover:text-yellow-600">Advisory</a>
 
       <div class="relative group">
@@ -108,9 +113,11 @@
         </button>
 
         <!-- services's dropdown -->
+        <div class="absolute left-0 top-full w-full h-2"></div>
         <div
-          class="absolute left-0 top-full mt-1 w-48 bg-white border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200"
+          class="absolute left-0 top-full mt-0 w-48 bg-white border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200"
         >
+          <!-- bridges the gap -->
           <a
             href="/pages/services/emergency.html"
             class="block px-4 py-3 hover:bg-gray-100"
@@ -145,7 +152,9 @@
         class="relative flex items-center justify-center w-10 h-10 rounded-full hover:bg-rose-50 transition group"
         title="My Favourites"
       >
-        <i class="fa-solid fa-heart text-rose-400 group-hover:text-rose-600 text-lg transition"></i>
+        <i
+          class="fa-solid fa-heart text-rose-400 group-hover:text-rose-600 text-lg transition"
+        ></i>
         <span
           id="nav-fav-badge"
           class="hidden absolute -top-1 -right-1 bg-rose-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center"

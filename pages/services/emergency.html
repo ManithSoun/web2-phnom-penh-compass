@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Services — Phnom Penh Compass</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../../src/css/style.css" />
+  </head>
+
+  <body class="flex flex-col min-h-screen bg-[#FBFCF6] text-gray-800">
+    <header></header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-6 lg:px-10 pt-28 pb-12 w-full">
+      <div
+        class="mb-10 text-center flex flex-col items-center justify-center w-full px-4 sm:px-0"
+      >
+        <h1
+          class="text-3xl sm:text-4xl font-black text-[#202D45] flex items-center justify-center gap-3 mb-3"
+        >
+          <i class="fa-solid fa-triangle-exclamation text-[#DFB777]"></i>
+          Emergency Services
+        </h1>
+        <p class="text-gray-500 text-sm sm:text-base max-w-2xl mx-auto">
+          Quick access to police, fire, ambulance, and 24/7 tourist assistance.
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col sm:flex-row gap-4 mb-8 max-w-4xl mx-auto w-full px-4 sm:px-0 relative z-20"
+      >
+        <div class="relative flex-1 w-full">
+          <i
+            class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"
+          ></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search..."
+            class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 text-[#202D45] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#DFB777] shadow-sm transition-shadow"
+            onkeyup="renderEmergencyTable()"
+          />
+        </div>
+      </div>
+
+      <div
+        id="services-container"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      ></div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../../config.js"></script>
+    <script src="../../src/js/components.js"></script>
+    <script src="../../src/js/services.js"></script>
+  </body>
+</html>
