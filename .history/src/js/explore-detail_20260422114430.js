@@ -1,5 +1,4 @@
 const COMMENTS_KEY = "ppCompassPlaceComments";
-const AUTHOR_KEY = "ppCompassCommentAuthorId";
 const MAX_IMAGE_SIZE = 1024 * 1024; // 1 MB
 
 function readComments() {
@@ -12,15 +11,6 @@ function readComments() {
 
 function writeComments(comments) {
 	localStorage.setItem(COMMENTS_KEY, JSON.stringify(comments));
-}
-
-function getAuthorId() {
-	let authorId = localStorage.getItem(AUTHOR_KEY);
-	if (!authorId) {
-		authorId = crypto.randomUUID();
-		localStorage.setItem(AUTHOR_KEY, authorId);
-	}
-	return authorId;
 }
 
 function getPlaceNameFromQuery() {
@@ -72,7 +62,6 @@ function formatDate(iso) {
 
 function renderComments(placeName) {
 	const commentsList = document.getElementById("comments-list");
-	const currentAuthorId = getAuthorId();
 	const comments = readComments()
 		.filter((comment) => comment.placeName === placeName)
 		.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
@@ -85,22 +74,15 @@ function renderComments(placeName) {
 
 	commentsList.innerHTML = comments
 		.map((comment) => {
-			const canDelete = !comment.authorId || comment.authorId === currentAuthorId;
 			const imageBlock = comment.photoData
 				? `<img src="${comment.photoData}" alt="User uploaded feedback" class="object-cover w-full mt-3 border border-gray-100 rounded-lg h-52" />`
-				: "";
-			const deleteButton = canDelete
-				? `<button type="button" class="comment-delete-btn text-xs font-semibold text-red-600 hover:underline" data-comment-id="${comment.id}">Delete</button>`
 				: "";
 
 			return `
 				<article class="p-4 border border-gray-100 rounded-xl">
 					<div class="flex items-center justify-between gap-3">
 						<h3 class="font-semibold text-primary">${comment.name}</h3>
-						<div class="flex items-center gap-3">
-							<time class="text-xs text-gray-500">${formatDate(comment.createdAt)}</time>
-							${deleteButton}
-						</div>
+						<time class="text-xs text-gray-500">${formatDate(comment.createdAt)}</time>
 					</div>
 					<p class="mt-2 text-gray-700 whitespace-pre-wrap">${comment.message}</p>
 					${imageBlock}
@@ -150,7 +132,6 @@ async function handleSubmit(event, placeName) {
 	const newComment = {
 		id: crypto.randomUUID(),
 		placeName,
-		authorId: getAuthorId(),
 		name: escapeHtml(name),
 		message: escapeHtml(message),
 		photoData,
@@ -165,23 +146,16 @@ async function handleSubmit(event, placeName) {
 	renderComments(placeName);
 }
 
-function deleteCommentById(commentId, placeName) {
-	const comments = readComments();
-	const currentAuthorId = getAuthorId();
-	const target = comments.find((comment) => comment.id === commentId);
-	if (!target) return;
+function clearCommentsForPlace(placeName) {
+	const shouldClear = window.confirm(
+		"Delete all comments for this place on this browser?"
+	);
+	if (!shouldClear) return;
 
-	const canDelete = !target.authorId || target.authorId === currentAuthorId;
-	if (!canDelete) {
-		alert("You can only delete your own comments.");
-		return;
-	}
-
-	const shouldDelete = window.confirm("Delete this comment?");
-	if (!shouldDelete) return;
-
-	const updated = comments.filter((comment) => comment.id !== commentId);
-	writeComments(updated);
+	const comments = readComments().filter(
+		(comment) => comment.placeName !== placeName
+	);
+	writeComments(comments);
 	renderComments(placeName);
 }
 
@@ -195,11 +169,8 @@ function init() {
 	const form = document.getElementById("comment-form");
 	form.addEventListener("submit", (event) => handleSubmit(event, selectedPlaceName));
 
-	document.addEventListener("click", (event) => {
-		const deleteBtn = event.target.closest(".comment-delete-btn");
-		if (!deleteBtn) return;
-		deleteCommentById(deleteBtn.dataset.commentId, selectedPlaceName);
-	});
+	const clearBtn = document.getElementById("clear-comments");
+	clearBtn.addEventListener("click", () => clearCommentsForPlace(selectedPlaceName));
 }
 
 init();
