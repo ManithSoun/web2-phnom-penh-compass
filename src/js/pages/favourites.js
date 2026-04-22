@@ -1,15 +1,13 @@
-const FAV_KEY = "ppCompassFavourites";
-
 function getFavourites() {
   try {
-    return JSON.parse(localStorage.getItem(FAV_KEY)) || [];
+    return JSON.parse(localStorage.getItem(CONFIG.FAV_KEY)) || [];
   } catch {
     return [];
   }
 }
 
 function saveFavourites(favs) {
-  localStorage.setItem(FAV_KEY, JSON.stringify(favs));
+  localStorage.setItem(CONFIG.FAV_KEY, JSON.stringify(favs));
 }
 
 function updateFavBadge() {

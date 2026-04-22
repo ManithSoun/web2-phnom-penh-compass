@@ -1,9 +1,7 @@
-const FAV_KEY = "ppCompassFavourites";
-
 // Returns the saved favourites array from localStorage.
 function getFavourites() {
   try {
-    return JSON.parse(localStorage.getItem(FAV_KEY)) || [];
+    return JSON.parse(localStorage.getItem(CONFIG.FAV_KEY)) || [];
   } catch {
     return [];
   }
@@ -11,7 +9,7 @@ function getFavourites() {
 
 // Saves the full favourites array back to localStorage.
 function saveFavourites(favs) {
-  localStorage.setItem(FAV_KEY, JSON.stringify(favs));
+  localStorage.setItem(CONFIG.FAV_KEY, JSON.stringify(favs));
 }
 
 // Checks whether a place (by name) is already favourited.
