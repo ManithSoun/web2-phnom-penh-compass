@@ -40,7 +40,7 @@ function renderStars(rating) {
 
 function getDetailUrl(item) {
   if (item.pageUrl) return item.pageUrl;
-  return `explore-detail.html?place=${encodeURIComponent(item.name)}`;
+  return `explore/explore-detail.html?place=${encodeURIComponent(item.name)}`;
 }
 
 // Card render
@@ -104,7 +104,7 @@ function emptyStateHtml() {
         &nbsp;on any place to save it here.
       </p>
       <a
-        href="/pages/explore.html"
+        href="/pages/explore/explore.html"
         class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl hover:bg-[#162f45] transition font-semibold"
       >
         <i class="fas fa-compass"></i> Explore Places
