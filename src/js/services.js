@@ -1,12 +1,8 @@
-// 1. The Data Array
 const servicesData = [
-  // ==========================================
-  // HOSPITALS
-  // ==========================================
   {
     category: "hospitals",
     name: "Calmette Hospital",
-    badge: "Public Hospital",
+    badge: "Public",
     image: "../../src/assets/services/calmette.jpg",
     email: "info@calmette.gov.kh",
     mapLink: "https://maps.app.goo.gl/ZLxRQ427aW8z474i6",
@@ -18,11 +14,10 @@ const servicesData = [
     link: "https://calmette.gov.kh/",
     icon: "fa-hospital",
   },
-
   {
     category: "hospitals",
     name: "Royal Phnom Penh Hospital",
-    badge: "International Hospital",
+    badge: "International",
     image:
       "https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Royal_Phnom_Penh_Hospital.jpg/3840px-Royal_Phnom_Penh_Hospital.jpg",
     email: "info@royalphnompenhhospital.com",
@@ -35,11 +30,10 @@ const servicesData = [
     link: "https://royalphnompenhhospital.com/",
     icon: "fa-hospital",
   },
-
   {
     category: "hospitals",
     name: "Intercare Hospital",
-    badge: "International Hospital",
+    badge: "International",
     image:
       "https://intercarehospital.com/wp-content/uploads/2024/05/IMG_8272-1024x683-1.jpg",
     email: "info@intercarehospital.com",
@@ -52,11 +46,10 @@ const servicesData = [
     link: "https://intercarehospital.com/",
     icon: "fa-hospital",
   },
-
   {
     category: "hospitals",
     name: "Khema International Hospital",
-    badge: "International Hospital",
+    badge: "International",
     image: "../../src/assets/services/khema.jpg",
     email: "contact@khemahospital.com",
     mapLink: "https://maps.app.goo.gl/yK6zxU5ox5nV9y479",
@@ -67,11 +60,10 @@ const servicesData = [
     link: "https://khemahospital.com/en/",
     icon: "fa-hospital",
   },
-
   {
     category: "hospitals",
     name: "Sen Sok University Hospital",
-    badge: "Private Hospital",
+    badge: "Private",
     image: "../../src/assets/services/sensokiu.png",
     email: "info@sensokiuh.com",
     mapLink: "https://maps.app.goo.gl/KGhmEw8Rs89kZrSLA",
@@ -83,11 +75,10 @@ const servicesData = [
     link: "https://sensokiuh.com/",
     icon: "fa-hospital",
   },
-
   {
     category: "hospitals",
     name: "Central Hospital Phnom Penh",
-    badge: "Private Hospital",
+    badge: "Private",
     image:
       "https://paragon.com.vn/wp-content/uploads/2022/06/central-hospital-no-82a-154-60f05b9156443.jpg",
     email: "inquiry@central-hospital.com",
@@ -100,11 +91,10 @@ const servicesData = [
     link: "https://central-hospital.com/",
     icon: "fa-hospital",
   },
-
   {
     category: "hospitals",
     name: "Khmer-Soviet Friendship Hospital",
-    badge: "Public Hospital",
+    badge: "Public",
     image:
       "https://pppenglish.sgp1.digitaloceanspaces.com/image/main/field/image/the_khmer-soviet_friendship_hospital_in_tumnop_teuk_commune_of_phnom_penhs_chamkarmon_district._heng_chivoan.jpg",
     email: "info@ksfh.gov",
@@ -116,11 +106,10 @@ const servicesData = [
     link: "https://ksfh.gov.kh/",
     icon: "fa-hospital",
   },
-
   {
     category: "hospitals",
     name: "Preah Ang Duong Hospital",
-    badge: "Public Hospital",
+    badge: "Public",
     image:
       "https://vf-org-media.s3.us-east-2.amazonaws.com/AAcXr8rf-Bq4huzvsusajCceiQqk9M_-H7FjG2mjQAcNs-By0ZAJ06Wdctzeegdiwd8DRt7nXxmddL6BIK6X8Oa7PLj2R9DLpCcCoew=s1600-w1600",
     mapLink: "https://maps.app.goo.gl/4KjaciTfhZ2bAVuS6",
@@ -132,11 +121,10 @@ const servicesData = [
     link: "http://preahangduong.org/",
     icon: "fa-hospital",
   },
-
   {
-    category: "hospitals",
+    category: "clinics",
     name: "Raffles Medical Phnom Penh",
-    badge: "International Clinic",
+    badge: "International",
     image:
       "https://www.expatden.com/wp-content/uploads/2022/12/Raffles-Medical-Clinic.jpg",
     email: "enquiries_phnompenh@rafflesmedical.com",
@@ -149,11 +137,10 @@ const servicesData = [
     link: "https://rafflesmedical.com.kh/en/",
     icon: "fa-clinic-medical",
   },
-
   {
     category: "hospitals",
     name: "National Pediatric Hospital",
-    badge: "Public Hospital",
+    badge: "Public",
     image:
       "https://pressocm.gov.kh/wp-content/uploads/2018/05/20180514_PMHS_NATIONAL_HOSPITAL-K057.jpg",
     email: "nphkh.info@gmail.com",
@@ -166,11 +153,10 @@ const servicesData = [
     link: "https://www.realestate.com.kh/guides/hospitals-and-clinics-in-cambodia/",
     icon: "fa-hospital",
   },
-
   {
     category: "hospitals",
     name: "Kantha Bopha Children's Hospital",
-    badge: "Non-Profit Hospital",
+    badge: "Non-Profit",
     image:
       "https://vodenglish.news/wp-content/uploads/2020/07/2019-kantha-bopha-entrance-phnom-penh-scaled.jpg",
     email: "kunthabophaphnompenh@gmail.com",
@@ -182,11 +168,10 @@ const servicesData = [
     link: "https://www.beat-richner.ch/",
     icon: "fa-hospital",
   },
-
   {
     category: "hospitals",
     name: "Preah Kossamak Hospital",
-    badge: "Public Hospital",
+    badge: "Public",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Cambodia-China_Friendship_Preah_Kossamak_Hospital.jpg/3840px-Cambodia-China_Friendship_Preah_Kossamak_Hospital.jpg",
     email: "info@ccfkh.com",
@@ -198,14 +183,10 @@ const servicesData = [
     link: "https://www.ccfkh.com/",
     icon: "fa-hospital",
   },
-
-  // ==========================================
-  // EMBASSIES
-  // ==========================================
   {
     category: "embassies",
     name: "Embassy of Australia",
-    badge: "Oceania",
+    badge: "Australia",
     image: "../../src/assets/services/australia.jpg",
     facebook: "https://www.facebook.com/AustralianEmbassyPhnomPenh/",
     facebookName: "Australian Embassy, Cambodia",
@@ -273,7 +254,7 @@ const servicesData = [
   {
     category: "embassies",
     name: "Embassy of France in Cambodia",
-    badge: "Europe",
+    badge: "Western Europe",
     image:
       "https://img.cambodianess.com/uploads/article/03-2026/1772356524.jpg",
     facebook: "https://www.facebook.com/france.cambodge/",
@@ -290,7 +271,7 @@ const servicesData = [
   {
     category: "embassies",
     name: "Embassy of the Federal Republic of Germany",
-    badge: "Europe",
+    badge: "Western Europe",
     image: "../../src/assets/services/germany.png",
     facebook: "https://www.facebook.com/recberlin",
     facebookName:
@@ -413,14 +394,14 @@ const servicesData = [
     description:
       "Provides strategic diplomatic ties and citizen services for Singaporeans abroad.",
     phone: "+855 23 221 875",
-    address: "#129, Preah Norodom Blvd, Phnom Penh",
+    address: "129, Preah Norodom Blvd, Phnom Penh",
     link: "https://www.mfa.gov.sg/phnompenh",
     icon: "fa-building-flag",
   },
   {
     category: "embassies",
     name: "British Embassy in Cambodia",
-    badge: "Europe",
+    badge: "Western Europe",
     image: "../../src/assets/services/uk.jpeg",
     facebook: "https://www.facebook.com/BritishEmbassyCambodia",
     facebookName: "British Embassy in Cambodia",
@@ -447,10 +428,6 @@ const servicesData = [
     link: "https://kh.usembassy.gov/",
     icon: "fa-building-flag",
   },
-
-  // ==========================================
-  // USEFUL APPS
-  // ==========================================
   {
     category: "apps",
     name: "Grab",
@@ -693,25 +670,15 @@ const servicesData = [
     ],
   },
 ]
-
-// ==========================================
-// PAGINATION STATE
-// ==========================================
 let currentPage = 1
-const itemsPerPage = 9
-
-// Global function to jump to a specific page
+const itemsPerPage = 18
 window.goToPage = function (pageNumber) {
   currentPage = pageNumber
   renderCards()
-  // Smoothly scroll back to the top of the cards when the page changes
   window.scrollTo({ top: 0, behavior: "smooth" })
 }
-
-// 2. Global Handlers (Flip & Accordion)
 window.handleCardFlip = function (clickedIndex, event) {
   if (event && event.target.closest("a")) return
-
   const allCards = document.querySelectorAll(".flip-inner")
   allCards.forEach((card, index) => {
     if (index === clickedIndex) {
@@ -721,14 +688,10 @@ window.handleCardFlip = function (clickedIndex, event) {
     }
   })
 }
-
-// Accordion toggle
 window.toggleAppCard = function (clickedIndex, event) {
   if (event && event.target.closest("a")) return
-
   const targetDetails = document.getElementById(`app-details-${clickedIndex}`)
   const targetChevron = document.getElementById(`chevron-${clickedIndex}`)
-
   if (
     targetDetails.style.maxHeight &&
     targetDetails.style.maxHeight !== "0px"
@@ -738,64 +701,122 @@ window.toggleAppCard = function (clickedIndex, event) {
   } else {
     const allDetails = document.querySelectorAll(".app-details-content")
     const allChevrons = document.querySelectorAll(".app-chevron")
-
     allDetails.forEach((div) => (div.style.maxHeight = "0px"))
     allChevrons.forEach((icon) => (icon.style.transform = "rotate(0deg)"))
-
     targetDetails.style.maxHeight = "1200px"
     targetChevron.style.transform = "rotate(180deg)"
   }
 }
-
-// 3. The Rendering Function
+window.handleScreenshotScroll = function (container) {
+  if (!container) return
+  const arrow = container.parentElement.querySelector(".swipe-arrow")
+  if (!arrow) return
+  const isScrollable = container.scrollWidth > container.clientWidth + 5
+  const isAtEnd =
+    container.scrollLeft + container.clientWidth >= container.scrollWidth - 5
+  if (!isScrollable || isAtEnd) {
+    arrow.classList.add("!opacity-0")
+  } else {
+    arrow.classList.remove("!opacity-0")
+  }
+}
+window.handleScreenshotScroll = function (container) {
+  if (!container) return
+  const arrow = container.parentElement.querySelector(".swipe-arrow")
+  if (!arrow) return
+  const isScrollable = container.scrollWidth > container.clientWidth + 5
+  const isAtEnd =
+    container.scrollLeft + container.clientWidth >= container.scrollWidth - 5
+  if (!isScrollable || isAtEnd) {
+    arrow.classList.add("!opacity-0")
+  } else {
+    arrow.classList.remove("!opacity-0")
+  }
+}
 function renderCards() {
   const pathname = window.location.pathname
-
-  // DELEGATION: If we are on the Emergency page, use the Table function instead!
   if (pathname.includes("emergency")) {
     renderEmergencyTable()
     return
   }
-
-  // ==== NORMAL CARD LOGIC STARTS HERE ====
   const container = document.getElementById("services-container")
   if (!container) return
-
   let currentCategory = ""
   if (pathname.includes("hospitals")) currentCategory = "hospitals"
   else if (pathname.includes("embassies")) currentCategory = "embassies"
   else if (pathname.includes("useful-app")) currentCategory = "apps"
-
+  const getMasterGroup = (item, category) => {
+    let tag = Array.isArray(item.badge) ? item.badge[0] : item.badge || "Other"
+    const t = tag.toLowerCase()
+    if (category === "embassies") {
+      if (t.includes("asia") || t.includes("middle east")) return "Asia"
+      if (
+        t.includes("europe") ||
+        t.includes("russia") ||
+        t.includes("uk") ||
+        t.includes("kingdom")
+      )
+        return "Europe"
+      if (
+        t.includes("america") ||
+        t.includes("usa") ||
+        t.includes("canada") ||
+        t.includes("latin") ||
+        t.includes("mexico") ||
+        t.includes("brazil")
+      )
+        return "The Americas"
+      if (t.includes("africa")) return "Africa"
+      if (
+        t.includes("oceania") ||
+        t.includes("australia") ||
+        t.includes("pacific") ||
+        t.includes("zealand")
+      )
+        return "Oceania"
+      return tag
+    }
+    if (category === "hospitals") {
+      if (item.category === "clinics" || t.includes("clinic")) return "Clinics"
+      return "Hospitals"
+    }
+    return tag
+  }
   const searchInput = document.getElementById("searchInput")
   const searchTerm = searchInput ? searchInput.value.toLowerCase() : ""
-
-  // 1. FILTER AND SMART-SORT THE DATA
-  const filteredData = servicesData
-    .filter((item) => {
-      const matchesCategory = item.category === currentCategory
-      const matchesSearch =
-        item.name.toLowerCase().includes(searchTerm) ||
-        item.description.toLowerCase().includes(searchTerm) ||
-        item.badge.toLowerCase().includes(searchTerm)
-
-      return matchesCategory && matchesSearch
-    })
-    .sort((a, b) => {
-      // Group them by their Badge first
-      if (a.badge === b.badge) {
-        // If they have the same badge, sort them alphabetically by Name
-        return a.name.localeCompare(b.name)
+  const filteredData = servicesData.filter((item) => {
+    let matchesCategory = item.category === currentCategory
+    if (currentCategory === "hospitals" && item.category === "clinics") {
+      matchesCategory = true
+    }
+    const badgeText = Array.isArray(item.badge)
+      ? item.badge.join(" ")
+      : item.badge || ""
+    const matchesSearch =
+      (item.name || "").toLowerCase().includes(searchTerm) ||
+      (item.description || "").toLowerCase().includes(searchTerm) ||
+      badgeText.toLowerCase().includes(searchTerm)
+    return matchesCategory && matchesSearch
+  })
+  if (currentCategory !== "apps") {
+    filteredData.sort((a, b) => {
+      let groupA = getMasterGroup(a, currentCategory)
+      let groupB = getMasterGroup(b, currentCategory)
+      if (groupA === groupB) {
+        return (a.name || "").localeCompare(b.name || "")
       }
-      // Otherwise, alphabetize the Badges
-      return a.badge.localeCompare(b.badge)
+      if (currentCategory === "hospitals") {
+        if (groupA === "Hospitals") return -1
+        if (groupB === "Hospitals") return 1
+      }
+      return groupA.localeCompare(groupB)
     })
-
+  }
   if (currentCategory === "apps") {
     container.className = "flex flex-col gap-5 max-w-4xl mx-auto w-full"
   } else {
     container.className = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
   }
-
   if (filteredData.length === 0) {
     container.innerHTML = `
       <div class="col-span-full text-center py-12 w-full">
@@ -806,23 +827,13 @@ function renderCards() {
     `
     return
   }
-
-  // PAGINATION LOGIC
   const totalPages = Math.ceil(filteredData.length / itemsPerPage)
   if (currentPage > totalPages) currentPage = 1
-
   const startIndex = (currentPage - 1) * itemsPerPage
   const endIndex = startIndex + itemsPerPage
   const paginatedData = filteredData.slice(startIndex, endIndex)
-
   let cardsHTML = ""
-
-  // Tracker to know when we switch to a new category!
   let currentBadgeTracker = ""
-
-  // ==========================================
-  // RENDER LOGIC FOR APPS
-  // ==========================================
   if (currentCategory === "apps") {
     cardsHTML =
       `
@@ -833,32 +844,29 @@ function renderCards() {
     ` +
       paginatedData
         .map((item, index) => {
-          let headerHTML = ""
-          // If the badge changes, inject a full-width header!
-          if (item.badge !== currentBadgeTracker) {
-            headerHTML = `
-          <div class="w-full flex items-center gap-4 ${index === 0 ? "mt-0" : "mt-6"} mb-2">
-            <h3 class="text-sm sm:text-base font-black text-[#202D45] uppercase tracking-widest">${item.badge}</h3>
-            <div class="h-px bg-gray-200 flex-grow"></div>
-          </div>
-        `
-            currentBadgeTracker = item.badge
-          }
-
-          return (
-            headerHTML +
-            `
+          const tags = Array.isArray(item.badge)
+            ? item.badge
+            : item.badge
+              ? item.badge.split("/")
+              : ["App"]
+          return `
       <div class="bg-white rounded-3xl shadow-sm hover:shadow-md border border-gray-100 overflow-hidden transition-all duration-300">
-
           <div class="p-5 md:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 cursor-pointer group relative" onclick="toggleAppCard(${index}, event)">
               <div class="flex items-center gap-4 sm:gap-6 w-full sm:w-auto flex-grow">
                   <img src="${item.image}" alt="${item.name}" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover shadow-sm flex-shrink-0 border border-gray-100 group-hover:scale-105 transition-transform duration-300">
                   <div class="flex-grow pr-10 sm:pr-0">
-                      <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 mb-1">
+                      <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                           <h2 class="text-xl sm:text-2xl font-bold text-[#202D45] leading-tight">${item.name}</h2>
-                          <span class="inline-block px-3 py-1 bg-[#DFB777]/20 text-[#be924b] text-[10px] sm:text-xs font-bold rounded-full w-max">${item.badge}</span>
+                          <div class="flex flex-wrap items-center gap-1.5">
+                              ${tags
+                                .map(
+                                  (tag) => `
+                                  <span class="inline-block px-3 py-1 bg-[#DFB777]/20 text-[#be924b] text-[10px] sm:text-xs font-bold rounded-full whitespace-nowrap">${tag.trim()}</span>
+                              `,
+                                )
+                                .join("")}
+                          </div>
                       </div>
-                      <p class="text-gray-500 text-sm mt-1 line-clamp-1 pr-4">${item.description}</p>
                   </div>
               </div>
               <div class="absolute right-5 top-8 sm:static sm:right-auto sm:top-auto">
@@ -867,30 +875,30 @@ function renderCards() {
                   </div>
               </div>
           </div>
-
           <div id="app-details-${index}" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-[#F8F9FA] app-details-content">
               <div class="px-5 pt-5 pb-6 md:px-8 md:pt-6 md:pb-8 border-t border-gray-100">
-
                   <p class="text-gray-700 text-sm sm:text-base mb-6 leading-relaxed">${item.description}</p>
-
                   ${
                     item.screenshots && item.screenshots.length > 0
                       ? `
                   <div class="mb-6 md:mb-8">
-                      <div class="flex justify-between items-center mb-3 md:mb-4 px-1">
+                      <div class="mb-3 px-1">
                           <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Screenshots</span>
-                          <span class="text-[10px] font-bold text-gray-500 bg-gray-200/60 px-3 py-1.5 rounded-full flex items-center gap-2 uppercase tracking-wide">
-                              Swipe <i class="fa-solid fa-arrow-right-long"></i>
-                          </span>
                       </div>
-                      <div class="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory hide-scrollbar">
-                          ${item.screenshots.map((src) => `<img src="${src}" alt="${item.name} screenshot" class="h-48 sm:h-56 md:h-72 w-auto rounded-xl object-cover shadow-sm snap-center border border-gray-200 flex-shrink-0">`).join("")}
+                      <div class="relative w-full group/slider" onmouseenter="handleScreenshotScroll(this.querySelector('.hide-scrollbar'))">
+                          <div class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory hide-scrollbar" onscroll="handleScreenshotScroll(this)">
+                              ${item.screenshots.map((src) => `<img src="${src}" alt="${item.name} screenshot" onclick="openLightbox('${src}')" class="h-48 sm:h-56 md:h-72 w-auto rounded-xl object-cover shadow-sm snap-center border border-gray-200 flex-shrink-0 cursor-pointer hover:opacity-80 transition-opacity duration-200">`).join("")}
+                          </div>
+                          <div class="swipe-arrow hidden lg:flex absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none opacity-0 group-hover/slider:opacity-100 transition-opacity duration-300 z-10">
+                              <div class="w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm shadow-lg flex items-center justify-center border border-gray-200 text-[#202D45]">
+                                  <i class="fa-solid fa-chevron-right text-lg ml-0.5"></i>
+                              </div>
+                          </div>
                       </div>
                   </div>
                   `
                       : ""
                   }
-
                   <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8 mt-2">
                       <div class="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-4 sm:gap-6 text-sm sm:text-base font-semibold w-full lg:w-auto">
                           ${
@@ -901,7 +909,6 @@ function renderCards() {
                           </a>`
                               : ""
                           }
-
                           ${
                             item.email && item.email !== "N/A"
                               ? `
@@ -910,7 +917,6 @@ function renderCards() {
                           </a>`
                               : ""
                           }
-
                           ${
                             item.phone && item.phone !== "N/A"
                               ? `
@@ -920,7 +926,6 @@ function renderCards() {
                               : ""
                           }
                       </div>
-
                       <div class="grid grid-cols-1 min-[400px]:grid-cols-2 lg:flex items-stretch gap-3 w-full lg:w-auto">
                           ${
                             item.appStoreLink
@@ -934,7 +939,6 @@ function renderCards() {
                           </a>`
                               : ""
                           }
-
                           ${
                             item.playStoreLink
                               ? `
@@ -957,13 +961,9 @@ function renderCards() {
               </div>
           </div>
       `
-          )
         })
         .join("")
   } else {
-    // ==========================================
-    // RENDER LOGIC FOR FLIP CARDS
-    // ==========================================
     cardsHTML =
       `
       <style>
@@ -978,30 +978,41 @@ function renderCards() {
     ` +
       paginatedData
         .map((item, index) => {
+          const tags = Array.isArray(item.badge)
+            ? item.badge
+            : item.badge
+              ? item.badge.split("/")
+              : ["General"]
+          let headerGroup = getMasterGroup(item, currentCategory)
           let headerHTML = ""
-          // If the badge changes, inject a full-width header across the grid!
-          if (item.badge !== currentBadgeTracker) {
+          if (headerGroup !== currentBadgeTracker) {
             headerHTML = `
           <div class="col-span-full w-full flex items-center gap-4 ${index === 0 ? "mt-0" : "mt-6"} mb-2">
-            <h3 class="text-sm sm:text-base font-black text-[#202D45] uppercase tracking-widest">${item.badge}</h3>
+            <h3 class="text-sm sm:text-base font-black text-[#202D45] uppercase tracking-widest">${headerGroup}</h3>
             <div class="h-px bg-gray-200 flex-grow"></div>
           </div>
         `
-            currentBadgeTracker = item.badge
+            currentBadgeTracker = headerGroup
           }
-
           return (
             headerHTML +
             `
       <div class="flip-container h-[480px] w-full cursor-pointer group js-card" onclick="handleCardFlip(${index}, event)">
         <div class="flip-inner relative w-full h-full rounded-2xl shadow-md group-hover:shadow-xl transition-shadow duration-300">
-
           <div class="flip-front absolute inset-0 rounded-2xl overflow-hidden bg-[#202D45]">
             ${item.image ? `<img src="${item.image}" alt="${item.name}" class="absolute inset-0 w-full h-full object-cover">` : ""}
             <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/80 to-transparent opacity-95"></div>
             <div class="relative z-10 p-5 sm:p-6 flex flex-col h-full justify-end text-left">
               <div class="mb-3 transition-all duration-300">
-                <span class="inline-block px-3 py-1 bg-[#DFB777] text-[#202D45] text-xs font-bold rounded-full mb-3 shadow-sm">${item.badge}</span>
+                <div class="flex flex-wrap gap-2 mb-3">
+                    ${tags
+                      .map(
+                        (tag) => `
+                        <span class="inline-block px-3 py-1 bg-[#DFB777] text-[#202D45] text-xs font-bold rounded-full shadow-sm whitespace-nowrap">${tag.trim()}</span>
+                    `,
+                      )
+                      .join("")}
+                </div>
                 <h2 class="text-xl sm:text-2xl font-bold text-white leading-tight line-clamp-2" title="${item.name}">${item.name}</h2>
               </div>
               <p class="text-gray-300 text-sm mb-4 line-clamp-2 group-hover:line-clamp-none transition-all duration-300">${item.description}</p>
@@ -1010,68 +1021,63 @@ function renderCards() {
               </div>
             </div>
           </div>
-
           <div class="flip-back absolute inset-0 bg-[#202D45] rounded-2xl border border-gray-700 p-5 sm:p-6 flex flex-col">
             <h2 class="text-lg sm:text-xl font-bold text-white mb-5 border-b border-gray-600 pb-4">${item.name}</h2>
-            <div class="space-y-4 text-sm text-gray-200 flex-grow">
-
+            <div class="space-y-4 text-sm text-gray-200 flex-grow mt-2">
               ${
                 item.facebook && item.facebook !== "N/A"
                   ? `
-              <div class="grid grid-cols-[24px_1fr] gap-3 items-center">
-                <div class="flex justify-center">
+              <div class="grid grid-cols-[24px_1fr] gap-3 items-start">
+                <div class="flex justify-center items-center h-5">
                   <i class="fa-brands fa-facebook text-[#DFB777] text-base"></i>
                 </div>
-                <a href="${item.facebook}" target="_blank" rel="noopener noreferrer" class="hover:text-[#DFB777] transition-colors line-clamp-2 break-words leading-snug">
+                <a href="${item.facebook}" target="_blank" rel="noopener noreferrer" class="hover:text-[#DFB777] transition-colors line-clamp-2 break-words">
                   ${item.facebookName || "Facebook Page"}
                 </a>
               </div>`
                   : ""
               }
-
               ${
                 item.phone && item.phone !== "N/A"
                   ? `
               <div class="grid grid-cols-[24px_1fr] gap-3 items-start">
-                <div class="flex justify-center mt-[2px]">
+                <div class="flex justify-center items-center h-5">
                   <i class="fa-solid fa-phone text-[#DFB777] text-base"></i>
                 </div>
-                <div class="leading-snug">
+                <div>
                   ${item.phone
                     .split("/")
                     .map((p) => {
                       const cleanPhone = p.trim()
-                      return `<a href="tel:${cleanPhone.replace(/\s+/g, "")}" class="hover:text-[#DFB777] transition-colors break-words">${cleanPhone}</a>`
+                      return `<a href="tel:${cleanPhone.replace(/\s+/g, "")}" class="hover:text-[#DFB777] transition-colors break-words inline-block">${cleanPhone}</a>`
                     })
                     .join(' <span class="text-gray-500 mx-1">/</span> ')}
                 </div>
               </div>`
                   : ""
               }
-
               ${
                 item.email && item.email !== "N/A"
                   ? `
-              <div class="grid grid-cols-[24px_1fr] gap-3 items-center">
-                <div class="flex justify-center">
+              <div class="grid grid-cols-[24px_1fr] gap-3 items-start">
+                <div class="flex justify-center items-center h-5">
                   <i class="fa-solid fa-envelope text-[#DFB777] text-base"></i>
                 </div>
-                <a href="mailto:${item.email}" class="hover:text-[#DFB777] transition-colors break-all leading-snug">${item.email}</a>
+                <a href="mailto:${item.email}" class="hover:text-[#DFB777] transition-colors break-all">${item.email}</a>
               </div>`
                   : ""
               }
-
-              <div class="grid grid-cols-[24px_1fr] gap-3 items-center">
-                <div class="flex justify-center">
+              <div class="grid grid-cols-[24px_1fr] gap-3 items-start">
+                <div class="flex justify-center items-center h-5">
                   <i class="fa-solid fa-location-dot text-[#DFB777] text-base"></i>
                 </div>
                 ${
                   item.mapLink && item.mapLink !== "N/A"
                     ? `
-                <a href="${item.mapLink}" target="_blank" rel="noopener noreferrer" class="leading-snug hover:text-[#DFB777] hover:underline transition-all block" title="Open in Google Maps">
+                <a href="${item.mapLink}" target="_blank" rel="noopener noreferrer" class="hover:text-[#DFB777] hover:underline transition-all block" title="Open in Google Maps">
                   ${item.address}
                 </a>`
-                    : `<span class="leading-snug block">${item.address}</span>`
+                    : `<span class="block">${item.address}</span>`
                 }
               </div>
             </div>
@@ -1091,10 +1097,6 @@ function renderCards() {
         })
         .join("")
   }
-
-  // ==========================================
-  // RENDER PAGINATION BUTTONS
-  // ==========================================
   let paginationHTML = ""
   if (totalPages > 1) {
     let pageButtons = ""
@@ -1105,7 +1107,6 @@ function renderCards() {
         </button>
       `
     }
-
     paginationHTML = `
       <div class="col-span-full flex justify-center items-center gap-2 mt-8 mb-4 w-full">
         <button onclick="goToPage(${currentPage - 1})" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-gray-50 transition-colors disabled:opacity-30 disabled:cursor-not-allowed" ${currentPage === 1 ? "disabled" : ""}>
@@ -1118,50 +1119,35 @@ function renderCards() {
       </div>
     `
   }
-
   container.innerHTML = cardsHTML + paginationHTML
 }
-
-// 4. Initialize and add Search Bar Event Listeners
 document.addEventListener("DOMContentLoaded", () => {
   renderCards()
-
   const searchInput = document.getElementById("searchInput")
   if (searchInput) {
     searchInput.addEventListener("input", () => {
-      // ALWAYS reset to page 1 when the user types a new search!
       currentPage = 1
       renderCards()
     })
   }
 })
-
-// ==========================================
-// 4. Dedicated Emergency Table Renderer
-// ==========================================
 function renderEmergencyTable() {
   const container = document.getElementById("services-container")
   if (!container) return
-
   const searchInput = document.getElementById("searchInput")
   const searchTerm = searchInput ? searchInput.value.toLowerCase() : ""
-
-  // Data is now split into 'category' and 'name' for smart grouping!
   const emergencyTableData = [
-    // --- Core Medical & Rescue ---
     { category: "Emergency & Rescue", name: "SAMU Ambulance", phone: "119" },
     {
       category: "Emergency & Rescue",
-      name: "Fire & Rescue",
+      name: "Firefighters Department",
       phone: "118 / 666",
     },
     {
       category: "Emergency & Rescue",
-      name: "Phnom Penh Municipal Police",
+      name: "Police Department",
       phone: "117 / +855 97 778 0002",
     },
-
-    // --- Phnom Penh City Hall ---
     {
       category: "Phnom Penh Capital Hall",
       name: "Receive complaints and other information",
@@ -1172,8 +1158,6 @@ function renderEmergencyTable() {
       name: "COVID-19 Hotline",
       phone: "1222",
     },
-
-    // --- Hospitals & Health Centers ---
     {
       category: "Hospitals & Health Centers",
       name: "Calmette Hospital",
@@ -1214,8 +1198,6 @@ function renderEmergencyTable() {
       name: "Preah Ket Mealea Hospital",
       phone: "+855 23 427 229",
     },
-
-    // --- Ministry of Interior ---
     {
       category: "Ministry of Interior",
       name: "Public Security",
@@ -1242,8 +1224,6 @@ function renderEmergencyTable() {
       name: "Monitoring Mail & Registration",
       phone: "1290",
     },
-
-    // --- Other Ministries ---
     {
       category: "Ministry of Health",
       name: "Report Infectious Diseases",
@@ -1308,8 +1288,6 @@ function renderEmergencyTable() {
       phone: "1265",
     },
     { category: "Ministry of Tourism", name: "General Hotline", phone: "1221" },
-
-    // --- Committees, Authorities & Other Gov Bodies ---
     {
       category: "National Authorities & Committees",
       name: "National Authority for Combating Drugs (NACD)",
@@ -1380,8 +1358,6 @@ function renderEmergencyTable() {
       name: "National Committee: Land Concession & Forest Protection",
       phone: "1255",
     },
-
-    // --- Police, Military & Gendarmerie ---
     {
       category: "Police, Military & Gendarmerie",
       name: "General Commissariat of National Police",
@@ -1412,8 +1388,6 @@ function renderEmergencyTable() {
       name: "Takeo Provincial Royal Gendarmerie",
       phone: "1212",
     },
-
-    // --- Utilities & Other Services ---
     {
       category: "Utilities, NGOs & Other Services",
       name: "Electricite Du Cambodge (EDC)",
@@ -1450,17 +1424,13 @@ function renderEmergencyTable() {
       phone: "4333",
     },
   ]
-
-  // Make sure the search bar checks the category name too!
   const filteredTable = emergencyTableData.filter(
     (item) =>
       item.name.toLowerCase().includes(searchTerm) ||
       item.category.toLowerCase().includes(searchTerm) ||
       item.phone.includes(searchTerm),
   )
-
   container.className = "w-full max-w-4xl mx-auto px-4 sm:px-0"
-
   if (filteredTable.length === 0) {
     container.innerHTML = `
       <div class="col-span-full text-center py-12 w-full">
@@ -1470,14 +1440,10 @@ function renderEmergencyTable() {
       </div>`
     return
   }
-
-  // --- HTML Generation with Smart Grouping ---
   let tableRowsHTML = ""
   let currentCategoryTracker = ""
   let globalRowNumber = 1
-
   filteredTable.forEach((item) => {
-    // 1. If the category changes, insert a full-width header row
     if (item.category !== currentCategoryTracker) {
       tableRowsHTML += `
         <tr class="bg-gray-100 border-b border-gray-200">
@@ -1488,8 +1454,6 @@ function renderEmergencyTable() {
       `
       currentCategoryTracker = item.category
     }
-
-    // 2. Insert the actual service row
     tableRowsHTML += `
       <tr class="hover:bg-[#DFB777]/15 transition-colors bg-white border-b border-gray-100 last:border-0">
         <td class="py-4 px-6 text-center font-semibold text-gray-500">${globalRowNumber++}</td>
@@ -1506,8 +1470,6 @@ function renderEmergencyTable() {
       </tr>
     `
   })
-
-  // Render the final table to the screen
   container.innerHTML = `
     <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mb-8 w-full mt-4">
       <div class="overflow-x-auto">
@@ -1526,4 +1488,26 @@ function renderEmergencyTable() {
       </div>
     </div>
   `
+}
+window.openLightbox = function (src) {
+  const lightbox = document.createElement("div")
+  lightbox.className =
+    "fixed inset-0 z-[100] bg-[#0f172a]/95 backdrop-blur-sm flex items-center justify-center opacity-0 transition-opacity duration-300 cursor-pointer"
+  lightbox.innerHTML = `
+    <button class="absolute top-6 right-6 text-white hover:text-[#DFB777] transition-colors z-[101]">
+      <i class="fa-solid fa-xmark text-4xl"></i>
+    </button>
+    <img src="${src}" class="max-h-[90vh] max-w-[90vw] object-contain rounded-xl shadow-2xl scale-95 transition-transform duration-300" alt="Fullscreen View">
+  `
+  lightbox.onclick = function () {
+    lightbox.classList.remove("opacity-100")
+    lightbox.querySelector("img").classList.remove("scale-100")
+    setTimeout(() => lightbox.remove(), 300)
+  }
+  document.body.appendChild(lightbox)
+  requestAnimationFrame(() => {
+    lightbox.classList.add("opacity-100")
+    lightbox.querySelector("img").classList.add("scale-100")
+    lightbox.querySelector("img").classList.remove("scale-95")
+  })
 }
