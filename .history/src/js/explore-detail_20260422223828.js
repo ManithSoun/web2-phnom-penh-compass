@@ -227,7 +227,7 @@ async function handleSubmit(event, placeName) {
     renderComments(placeName);
     return;
   }
-
+	
 
   const newComment = {
     id: crypto.randomUUID(),
