@@ -1,13 +1,3 @@
-/**
- * main.js — Home Page
- * Responsibilities: Weather Widget (real-time data via OpenWeatherMap)
- *
- * API key is read from CONFIG.OPENWEATHER_KEY (set in config.js)
- * If the key is empty, the widget shows realistic demo data automatically.
- */
-
-// ─── Helpers ────────────────────────────────────────────────────────────────
-
 /** Map OWM weather condition code to an emoji icon */
 function getWeatherIcon(code) {
   if (code >= 200 && code < 300) return "⛈️"; // Thunderstorm
@@ -120,12 +110,6 @@ async function initWeather() {
 }
 
 // ─── Popular Destinations ────────────────────────────────────────────────────
-
-/**
- * Render the first 4 entries from sightsData into #popular-destinations-grid.
- * Uses the same card structure as buildCard() in explore.js.
- * sightsData is provided by exploreData.js which is loaded before this script.
- */
 function renderPopularDestinations() {
   const grid = document.getElementById("popular-destinations-grid");
   if (!grid || typeof sightsData === "undefined") return;
@@ -186,8 +170,6 @@ function renderPopularDestinations() {
     })
     .join("");
 }
-
-// ─── Boot ───────────────────────────────────────────────────────────────────
 
 // Run immediately on page load
 initWeather();
