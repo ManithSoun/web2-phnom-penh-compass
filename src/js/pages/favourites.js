@@ -1,15 +1,13 @@
-const FAV_KEY = "ppCompassFavourites";
-
 function getFavourites() {
   try {
-    return JSON.parse(localStorage.getItem(FAV_KEY)) || [];
+    return JSON.parse(localStorage.getItem(CONFIG.FAV_KEY)) || [];
   } catch {
     return [];
   }
 }
 
 function saveFavourites(favs) {
-  localStorage.setItem(FAV_KEY, JSON.stringify(favs));
+  localStorage.setItem(CONFIG.FAV_KEY, JSON.stringify(favs));
 }
 
 function updateFavBadge() {
@@ -36,6 +34,11 @@ function renderStars(rating) {
   if (hasHalf) html += `<i class="fas fa-star-half-alt"></i>`;
   for (let i = 0; i < emptyStars; i++) html += `<i class="far fa-star"></i>`;
   return html;
+}
+
+function getDetailUrl(item) {
+  if (item.pageUrl) return item.pageUrl;
+  return `explore/explore-detail.html?place=${encodeURIComponent(item.name)}`;
 }
 
 // Card render
@@ -71,8 +74,7 @@ function buildFavCard(item) {
         </div>
         <div class="flex gap-2">
           <a
-            href="${item.pageUrl || "#"}"
-            target="_blank"
+            href="${getDetailUrl(item)}"
             class="block mt-auto border border-primary text-center py-2 rounded-lg hover:bg-background transition w-full"
           >View Details</a>
           <a
@@ -100,7 +102,7 @@ function emptyStateHtml() {
         &nbsp;on any place to save it here.
       </p>
       <a
-        href="/pages/explore.html"
+        href="/pages/explore/explore.html"
         class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl hover:bg-[#162f45] transition font-semibold"
       >
         <i class="fas fa-compass"></i> Explore Places

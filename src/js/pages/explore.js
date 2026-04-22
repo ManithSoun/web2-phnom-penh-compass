@@ -1,9 +1,7 @@
-const FAV_KEY = "ppCompassFavourites";
-
 // Returns the saved favourites array from localStorage.
 function getFavourites() {
   try {
-    return JSON.parse(localStorage.getItem(FAV_KEY)) || [];
+    return JSON.parse(localStorage.getItem(CONFIG.FAV_KEY)) || [];
   } catch {
     return [];
   }
@@ -11,7 +9,7 @@ function getFavourites() {
 
 // Saves the full favourites array back to localStorage.
 function saveFavourites(favs) {
-  localStorage.setItem(FAV_KEY, JSON.stringify(favs));
+  localStorage.setItem(CONFIG.FAV_KEY, JSON.stringify(favs));
 }
 
 // Checks whether a place (by name) is already favourited.
@@ -66,6 +64,11 @@ function renderStars(rating) {
   return starsHtml;
 }
 
+function getDetailUrl(item) {
+  if (item.pageUrl) return item.pageUrl;
+  return `explore-detail.html?place=${encodeURIComponent(item.name)}`;
+}
+
 // build card places as card component
 function buildCard(item) {
   const loved = isFavourited(item.name);
@@ -112,8 +115,7 @@ function buildCard(item) {
         </div>
         <div class="flex gap-2">
           <a
-            href="${item.pageUrl || "#"}"
-            target="_blank"
+            href="${getDetailUrl(item)}"
             class="block mt-auto border border-primary text-center py-2 rounded-lg hover:bg-background transition w-full"
           >
             View Details
@@ -161,11 +163,17 @@ document.addEventListener("click", (e) => {
   btn.title = alreadyLoved ? "Remove from favourites" : "Save to favourites";
 });
 
-// Render all four sections
+// Render explore.html preview sections
 renderCards("cafes-list", cafesData);
 renderCards("restaurants-list", restaurantsData);
 renderCards("museums-list", museumsData);
 renderCards("sights-list", sightsData);
+
+// Render category detail pages (cafes.html, restaurants.html, museums.html, sights2see.html)
+renderCards("cafes-detail-list", cafesData);
+renderCards("restaurants-detail-list", restaurantsData);
+renderCards("museums-detail-list", museumsData);
+renderCards("sights-detail-list", sightsData);
 
 // Update badge once navbar is ready (navbar loads asynchronously)
 // components.js calls updateFavBadge() after inject — this handles the page-load case

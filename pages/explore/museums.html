@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Museums — Phnom Penh Compass</title>
+    <link rel="icon" type="image" href="/src/assets/images/tab_logo.png" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../src/css/style.css" />
+  </head>
+
+  <body class="flex flex-col min-h-screen bg-background text-gray-800">
+    <!-- Navbar — loaded by components.js -->
+    <header></header>
+
+    <main class="pt-20 pb-24 max-w-7xl mx-auto px-6">
+      <!-- Hero Section -->
+      <section class="py-12 px-4 sm:px-6 lg:px-8">
+        <a
+          href="explore.html"
+          class="inline-flex items-center gap-2 text-gray-700 hover:text-black font-medium mb-6 transition-colors"
+        >
+          <i class="fas fa-arrow-left"></i>
+          Back to Explore
+        </a>
+
+        <div class="text-center">
+          <h1 class="text-4xl sm:text-5xl font-bold text-primary mb-4">
+            Museums in Phnom Penh
+          </h1>
+          <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+            Immerse yourself in Cambodia's rich history and vibrant culture
+            through world-class museums and cultural centers.
+          </p>
+        </div>
+      </section>
+
+      <!-- Museums Grid -->
+      <section class="px-4 sm:px-6 lg:px-8 pt-8">
+        <div
+          id="museums-detail-list"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        ></div>
+      </section>
+    </main>
+
+    <!-- Footer — loaded by components.js -->
+    <footer></footer>
+
+    <!-- Scripts — order matters, do not change -->
+    <script src="../../config.js"></script>
+    <script src="../../src/js/core/components.js"></script>
+    <script src="../../src/js/data/exploreData.js"></script>
+    <script src="../../src/js/pages/explore.js"></script>
+    <!-- Custom tailwind configuration -->
+    <script src="../../tailwind-config.js"></script>
+  </body>
+</html>
